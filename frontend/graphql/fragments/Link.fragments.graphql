@@ -1,0 +1,16 @@
+fragment Link on Link {
+    id
+    url
+    description
+    category
+    title
+    image {
+        ...Image
+    }
+}
+
+fragment Image on Resource {
+    id
+    url
+    name
+}

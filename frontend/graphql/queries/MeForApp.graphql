@@ -1,0 +1,12 @@
+query MeForApp {
+    me {
+        ...User
+    }
+}
+
+fragment User on User {
+    id
+    role
+    email
+    avatar
+}

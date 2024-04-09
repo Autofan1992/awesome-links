@@ -1,0 +1,12 @@
+mutation UploadResource($input: UploadResourceInput!) {
+    uploadResource(input: $input) {
+        ...Resource
+    }
+}
+
+fragment Resource on Resource {
+    id
+    mimetype
+    name
+    url
+}

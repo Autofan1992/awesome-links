@@ -1,0 +1,8 @@
+query LinksForHome($input: ConnectionInput) {
+    linkConnection(input: $input) {
+        hasMore
+        nodes {
+            ...Link
+        }
+    }
+}

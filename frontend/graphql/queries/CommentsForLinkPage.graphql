@@ -1,0 +1,13 @@
+query CommentsForLinkPage {
+    commentConnection {
+        hasMore
+        nodes {
+            ...Comment
+        }
+    }
+}
+
+fragment Comment on Comment {
+    id
+    text
+}
